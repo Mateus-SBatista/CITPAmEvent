@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>Minha página</title>
+    <style>
+      * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /*background: url("../img/gallery/6.jpg") top center;*/
+    background: url(../img/subscribe-bg.jpg) center center no-repeat;
+    background-size: cover
+   
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="telefone"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #f82249;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #f1516e;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Ajuste para o label dos termos e condições */
+label[for="termos"] {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+    </style>
+  </head>
+  <body>
+    <title>Cadastro de Usuário</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Cadastro de Usuário</h1>
+		<form id="cadastro-form">
+			<label for="nome-completo">Nome completo:</label>
+			<input type="text" id="nome-completo" name="nome-completo" required>
+
+			<label for="nome-cracha">Nome para o crachá:</label>
+			<input type="text" id="nome-cracha" name="nome-cracha" required>
+
+			<label for="cpf">CPF:</label>
+			<input type="text" id="cpf" name="cpf" required>
+      
+			<label for="ocupacao">Ocupação:</label>
+			<select id="ocupacao" name="ocupacao">
+				<option value="aluno">Aluno</option>
+				<option value="profissional">Profissional</option>
+				<option value="professor">Professor</option>
+			</select>
+			<p id="preco-matricula"></p>
+
+			<label for="modalidade">Modalidade:</label>
+			<select id="modalidade" name="modalidade">
+				<option value="curso">Curso</option>
+				<option value="start-up">Start-up</option>
+				<option value="palestras">Palestras</option>
+			</select>
+
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="telefone">Telefone para contato:</label>
+			<input type="telefone" id="telefone" name="telefone" required>
+
+			<label for="comprovante">Comprovante de ocupação:</label>
+      		<input type="file" id="comprovante" name="comprovante"><br>
+
+      		<label for="termos">
+        		<input type="checkbox" id="termos" name="termos" required>
+        		Li e concordo com os <a href="termos1.html">termos e condições</a>.
+      		</label>
+
+			<button type="submit">Cadastrar</button>
+		</form>
+
+		<div id="resultado"></div>
+	</div>
+
+	<script src="js/script.js"></script>
+  </body>
+</html>
+ 

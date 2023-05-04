@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>CITPAM2023 - Cadastramento</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/apple-touch-icon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="header-fixed">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div>
+
+    </div>
+  </header><!-- #header -->
+
+  <main id="main" class="main-page">
+
+    <!--==========================
+      Speaker Details Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+
+        <div class="container">
+  
+          <div class="section-header">
+            <h2>Cadastramento</h2>
+            <p></p>
+          </div>
+  
+          <div class="row contact-info">
+          </div>
+  
+          <div class="form">
+            <form id="cadastro-form" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="nome-completo" class="form-control" id="nome-completo" placeholder="Nome Completo" required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="nome-cracha" class="form-control" id="nome-cracha" placeholder="Nome no crachá" required>
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" name="cpf" class="form-control" id="cpf" placeholder="CPF" required>
+                    <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="telefone" class="form-control" name="telefone" id="telefone" placeholder="Telefone para contato" required>
+                    <div class="validation"></div>
+                </div>
+              </div>
+
+              <div class="form-group">
+              <label for="ocupacao">Ocupação:</label>
+			        <select id="ocupacao" name="ocupacao">
+                <option value="selecionar">SELECIONAR</option>
+				        <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+				        <option value="profissional">Profissional</option>				
+			        </select>
+                 <p id="preco-matricula"></p>
+              </div>
+                <div class="form-group">
+                    <label for="modalidade">Modalidade:</label>
+                    <select id="modalidade" name="modalidade">
+                        <option value="selecionar">SELECIONAR</option>
+                        <option value="curso">Curso</option>
+                        <option value="start-up">Start-up</option>
+                        <option value="palestras">Palestras</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comprovante">Comprovante de ocupação:</label>
+      		          <input type="file" id="comprovante" name="comprovante"><br>
+
+      		      <label for="termos">
+        		    <input type="checkbox" id="termos" name="termos" required>
+        		    Li e concordo com os <a href="termos1.html">termos e condições</a>.
+      		      </label>
+                </div>
+                <div class="text-center"><button type="submit">Cadastrar</button></div>
+            </form>
+
+            <div id="resultado"></div>
+          </div>
+     
+        </div>
+        
+      </section><!-- #contact -->
+
+  </main>
+
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>CITPAM</strong>. Todos os Direitos Reservados
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="https://instagram.com/mb.designer_grafic?igshid=ODM2MWFjZDg=">MB.designer_grafica</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Main Javascript File -->
+  <script src="js/main.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
